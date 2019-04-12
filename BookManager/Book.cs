@@ -27,7 +27,7 @@ namespace BookManager
                 this.title = title;
         }
 
-        public int GetTitleLength(string title)
+        public int GetTitleLength()
         {
             return title.Length;
         }
