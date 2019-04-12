@@ -16,17 +16,21 @@ namespace BookManager
         {
             this.title = title;
             this.author = author;
-        }        public string GetTitle()
+        }        public string GetTitle()
         {
             return title;
         }
 
-
         public void SetTitle(string title)
         {
-            this.title = title;
+            if (title != null && title.Length > 0)
+                this.title = title;
         }
 
+        public int GetTitleLength(string title)
+        {
+            return title.Length;
+        }
 
         public void AssignWordCountFromText(string text)
         {
